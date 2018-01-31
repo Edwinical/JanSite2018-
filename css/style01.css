@@ -1,0 +1,226 @@
+#wrapper {
+    background-color: beige;
+    float: inherit;
+    width: 900px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+header {
+float: left;
+width: 900px;
+height: 100px;
+background-color: darkslategray;
+color: whitesmoke;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+padding-left: 20px
+}
+
+h1, h2, h3, {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 21px;
+}
+
+nav {
+    float: left;
+    width: 900px;
+    height: 25px;
+    background-color: goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: goldenrod;
+    padding-left: 25px;
+}
+
+nav a {
+    color: darkslategray;
+    text-decoration: none;
+}
+nav a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+    text-decoration: none;
+}
+
+article {
+float: left;
+width: 560px;
+background-color: rgb(241, 222, 170);
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-size: 14px;
+color: rgb(56, 54, 54);
+padding: 20px 20px 25px 20px;
+height: 405px;
+}
+
+aside {
+float: left;
+background-color: rgb(206, 193, 178);
+width: 260px;
+padding: 20px 20px 50px 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 12px;
+height: 380px;
+
+
+}
+
+footer {
+background-color: darkslategrey;
+color: white;
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 12px;
+height: 0px 0px 0px 15px;
+}
+
+/* contact_form */
+
+.contact_form h2, .contact_form label {
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+
+.contact_form ul {
+    width: 100%;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding-left: 2%;
+}
+
+.contact_form li {
+    padding: 5px;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+.span li {
+    margin-left: 50px;
+}
+
+.required_notification, .form_hint {
+    margin: 70px;
+    font-size: 10px;
+
+}
+*:focus {
+    outline: none;
+}
+.contact_form label {
+    width: 70px;
+    display: inline-block;
+}
+.contact_form input {
+    width: 220px;
+    height: 20px;
+
+}
+
+.contact_form textarea {
+width: 200px;
+}
+.contact_form button {
+margin-left: 75px;
+}
+
+.contact_form input, .contact_form textarea {
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 3pc #f1f1f1, 0px 3px 3px rgb(170, 167, 167) inset;
+    border-radius: 5px;
+    padding-right: 10px;
+    -moz-transition: padding .2s;
+    -webkit-transition: padding .2s;
+    -o-transition: padding .2s;
+    transition: padding .2s;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    background: rgb(245, 239, 204);
+    border: 1px solid #555555;
+    box-shadow: 0px 0px 3px #aaaaaa;
+    padding-right: 70px;
+
+}
+
+.contact_form input:required, .contact_form textarea:required {
+    background: #fff url('../images/red_asterisk.png') no-repeat 100% center;
+}
+
+.contact_form input:valid, .contact_form textarea:valid {
+    background: #fff url('../images/valid.png') no-repeat 100% center;
+    box-shadow: rgb(99, 68, 3);
+    border-color: rgb(240, 203, 123);
+}
+
+.contact_form input:invalid, .contact_form textarea:invalid {
+    background: #fff url('../images/invalid.png') no-repeat 100% center;
+    box-shadow: brown;
+    border-color: red;
+
+}
+
+button.submit {
+    background-color: rgb(166, 230, 230);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #509111;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+button.submit:hover {
+    cursor: pointer;
+}
+
+button.submit:active {
+    background-color: rgb(83, 67, 230);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #111983;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form_hint {
+    background-color: rgb(224, 204, 167);
+    border-radius: 3px 3px 3px 3px;
+    color: #555555;
+    margin-left: 75px;
+    padding: 2px 5px;
+    postion: absolute;
+    display: none;
+}
+
+.form_hint::before {
+    content: "\25C0";
+    position: absolute;
+    color: darkgreen;
+    top: 7px;
+    left: 10px;
+
+}
+
+.contact_form input:focus + .form_hint { display: inline;} 
+
+.contact_form input:required:valid + .form_hint {
+    background: #111983;
+    display: none;
+
+}
+
+.contact_form input:required:valid + .form_hint::before {
+    color: darkgreen;
+}

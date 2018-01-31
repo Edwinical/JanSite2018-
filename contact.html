@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> My First HTML5 Webpage</title>
+
+<link rel="stylesheet" href="./css/style01.css">
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>My <em>Portfolio</em></h1>
+</header>
+<nav>
+    <a href="#">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Experience</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Passion</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Contact</a>
+</nav>
+<article>
+    <section>
+    <form class="contact_form" action="#" method="post" name="contact_form">
+        <ul>
+            <li>
+                <h2>Contact Us</h2>
+                <span class="required_notification"><em>* Denote required fields</em></span>
+            </li>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Edwin" required/>
+                <span class="form_hint">Name is required</span>
+            </li>
+            <li>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="someone@example.com" required/>
+                    <span class="form_hint">Enter proper email format, i.e someoneexample.com</span>
+            </li>
+            <li>
+                    <label for="url">Website</label>
+                    <input type="url" placeholder="https//example.com" required pattern="(http|https)://.+"/>
+            </li>
+            <li>
+                    <label for="comments">Comments</label>
+                    <textarea name="message" cols="50" rows="10"></textarea>
+            </li>
+            <li>
+                <button class="submit" type="submit">Submit Form</button>
+            </li>
+        </ul>
+    </form>
+    </section>
+</article>
+<aside>
+   <h3><u>My Works</u></h3>
+   <ul>
+       <li><a href="#">Print</a></li>
+       <li><a href="#">Advertising</a></li>
+       <li><a href="#">Packaging</a></li>
+   </ul>
+   <br>
+   <p>Offering design and print services.
+       <a href="#">Contact Us</a> with your requirements and details.
+   </p>
+
+</aside>
+<footer>
+<h4>Copyright &copy; KopiGao Pte Ltd</h4>
+</footer>
+</div>
+</body>
+
+</html>

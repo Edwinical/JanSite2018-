@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(252, 252, 221);
+}
+
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgb(252, 252, 221);
+}
+
+#div1 {
+background-color: lightblue;
+color: white;
+text-align: center;
+font-weight: bold;
+font-style: 15px;
+margin: 0px 10px 10px 10px;
+height: 20%;
+}
+
+#div2 {
+    float: left;
+    width: 33%;
+    height: 150px;
+    background: lightgreen; 
+}
+
+#div3 {
+    float: left;
+    width: 33%;
+    height: 150px;
+    background: cyan;
+}
+
+#div4 {
+    float: left;
+    width: 33%;
+    height: 150px;
+    padding-right: 9px;
+    background: greenyellow;
+}
+
+#div5 {
+    float: left;
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    background: pink;
+}

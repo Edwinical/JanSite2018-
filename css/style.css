@@ -1,0 +1,16 @@
+h1 {
+    background-color: purple;
+    color: yellow; 
+}
+
+p {
+    background-color: aqua;
+
+}
+
+.nice {
+    font-weight: bold;
+}
+#nicer {
+    background-color: grey
+}
